@@ -28,6 +28,7 @@
                                 name="bookTitle"
                                 class="form-control" 
                                 value="" 
+                                required
                             />
                         </div>
                         <div class="col">
@@ -39,6 +40,7 @@
                                 class="form-control" 
                                 name="bookAuthor" 
                                 value="" 
+                                required
                             />
                         </div>
                         <div class="col">
@@ -52,6 +54,7 @@
                                 min="1620" 
                                 max="2025" 
                                 value="" 
+                                required
                             />
                         </div>
                     </div>
@@ -63,6 +66,7 @@
                                     class="form-check-input"
                                     id="hardBack"
                                     name="bookFormat" 
+                                    value="hard-back"
                                 />
                                 <label for="hardBack" class="form-check-label text-capitalize">
                                     hard-back
@@ -74,6 +78,7 @@
                                     class="form-check-input"
                                     id="paperBack"
                                     name="bookFormat" 
+                                    value="paper-back"
                                 />
                                 <label for="paperBack" class="form-check-label text-capitalize">
                                     paper-back
@@ -85,6 +90,7 @@
                                     class="form-check-input"
                                     id="digital"
                                     name="bookFormat" 
+                                    value="digital"
                                 />
                                 <label for="digital" class="form-check-label text-capitalize">
                                     digital
@@ -96,6 +102,7 @@
                                     class="form-check-input"
                                     id="audio"
                                     name="bookFormat" 
+                                    value="audio"
                                 />
                                 <label for="audio" class="form-check-label text-capitalize">
                                     audio
@@ -109,6 +116,7 @@
                                     class="form-check-input"
                                     id="fiction"
                                     name="category" 
+                                    value="fiction"
                                 />
                                 <label for="fiction" class="form-check-label text-capitalize">
                                     fiction
@@ -120,6 +128,7 @@
                                     class="form-check-input"
                                     id="nonfiction"
                                     name="category" 
+                                    value="non-fiction"
                                 />
                                 <label for="nonfiction" class="form-check-label text-capitalize">
                                     nonfiction
@@ -238,10 +247,22 @@
                                     Science
                                 </label>
                             </div>
+                            <div class="form-check">
+                                <input 
+                                    type="checkbox"
+                                    name="genres"
+                                    value="poetry"
+                                    class="form-check-input"
+                                    id="poetry" 
+                                />
+                                <label for="poetry" class="form-check-label">
+                                    Poetry
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <button class="btn btn-danger text-capitalize" type="submit">submit</button>
+                        <button class="btn btn-danger text-capitalize" type="submit" id="submitBtn">submit</button>
                     </div>
                     <!-- end form -->
                 </form>
